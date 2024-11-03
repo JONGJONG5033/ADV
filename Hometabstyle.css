@@ -1,0 +1,271 @@
+body {
+    background-image: url("https://wallpapers.com/images/high/solid-background-deep-blue-gradient-mbcndgga1jycauaa.webp");
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+    margin: 0;
+  }
+  .logo1 {
+    position: absolute;
+    top: 25px;
+    left: 40px;
+    background-size: cover;
+    width: 100px;
+    transition: background-image 0.3s ease;
+    cursor: pointer;
+  }
+  .border-black {
+    border-color: black !important;
+}
+
+.btn {
+  transition: background-color 0.3s ease, cursor 0.3s ease;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+.button-image {
+  transition: transform 0.3s ease;
+  max-width: 20%;
+  height: auto;
+}
+
+.btn:hover .button-image {
+  transform: scale(1.05);
+}
+
+
+/*Sidebar*/
+#toggleButton {
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    cursor: pointer;
+    
+  }
+  
+  #toggleButton img {
+    position: relative;
+    transform: translateY(-40%) translateX(30%);
+    left: -70px;
+    
+  }
+  
+  #sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    color: black;
+    padding-top: 50px;
+    transition: all 0.3s ease;
+    border: 3px solid black;
+    font-size: 20px;  
+  }
+  .sidebar-item img:not(.Profile-Image img) {
+  max-width: 100%;
+  max-height: 50px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  }
+  
+  .sidebar-item {
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black; 
+  }
+  
+  
+  .sidebar-item:hover {
+    background-color: #555;
+    color: white;
+    text-decoration: none;
+    color: black; 
+  }
+  
+  #closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  #closeButton img {
+    width: 60px;
+    height: auto;
+  }
+  
+  .sidebar-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Profile-Image {
+    margin-right: 10px;
+  }
+
+  
+  .Profile-Image img {
+    width: 80px;
+    height: 80px;
+    border: 3px solid black;
+    border-radius: 50%;
+  }
+  .logout-btn { 
+    padding: 5px 10px;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    transform: translateY(100px) translateX(70px);
+    border: 3px solid black;
+    border-radius: 10px;
+  }
+  
+  .logout-btn img {
+    margin-right: 5px;
+    transform: translateY(5px) translateX(10px);
+  }
+
+  .logout-btn {
+    transform: translateY(1px) translateX(8px);
+    }
+
+  /*Sidebar for Cart*/
+
+  .rightbar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+    color: white;
+  }
+  
+  .rightbar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .rightbar a:hover {
+    color: #f1f1f1;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: none;
+    border: none;
+    color: #818181;
+    cursor: pointer;
+  }
+  
+  #openRightbar {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  #openRightbar img {
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  #closeRightbar {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+  z-index: 1001;
+  color: white;
+  border: none;
+  outline: none;
+  }
+  
+  #closeRightbar:hover {
+  color: red;
+  }
+  .checkout-btn {
+  padding: 5px 5px;
+  background-color: #ffffff;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  transform: translateY(30%) translateX(0);
+  }
+  
+  .checkout-btn:hover {
+  background-color: #000000;
+  }
+
+/*Product Cards*/
+.container {
+  transform: translateY(2%) translateX(0);
+  display: grid;
+}
+.custom-card {
+    border-radius: 8px;
+    width: 20rem;
+}
+
+.custom-image {
+    width: 100%;
+    height: auto;
+     /* Optional: kay murag maot pag naay border ang image "border: 4px solid black;" */
+    margin-bottom: 4px;
+}
+
+.custom-body {
+    padding: 1rem;
+    border: 1px solid black;
+}
+
+.price-box {
+    border: 2px solid black;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+.icon {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    margin-left: 0.5rem;
+    transition: transform 0.2s; 
+}
+
+.icon:hover {
+    transform: scale(1.1);
+}
+
+
+.cart-icon:hover {
+    content: url('Cart2.png');
+}
+
+.favorites-icon:hover {
+    content: url('Favorite2.png');
+}
